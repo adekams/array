@@ -18,6 +18,7 @@ myList.splice(2, 1, ['Orange Juice', 17])
 console.log(firstElement)
 console.log(lastElement)
 
+console.log(myList)
 
 /*for(let i=0; i< myList.length; i++) {
     let child = myList[i]

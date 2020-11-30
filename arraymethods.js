@@ -1,9 +1,9 @@
 let myList = [
-    ['MacBook Pro 2020', 2],
-    ['Iphone 12 pro', 5],
-    ['Backpack', 1],
-    ['Passport', 3],
-    ['Books', 19]
+  ['MacBook Pro 2020', 2],
+  ['Iphone 12 pro', 5],
+  ['Backpack', 1],
+  ['Passport', 3],
+  ['Books', 19]
 ]
 
 //remove first element and store in a variable
@@ -20,13 +20,19 @@ console.log(lastElement)
 
 console.log(myList)
 
-/*for(let i=0; i< myList.length; i++) {
-    let child = myList[i]
-    
-    console.log(`{${child[0]} : ${child[1]}}`)
-}*/
+//loop through and print an object
+let arrObj = {}
+for(let i=0; i< myList.length; i++) {
+  let child = myList[i]
+
+  arrObj[child[0]] = child[1]
+}
+console.log(arrObj)
 
 
-myList.forEach((list) => {
+/*myList.forEach((list) => {
   console.log(`{${list[0]} : ${list[1]}}`)
-})
+})*/
+
+
+
